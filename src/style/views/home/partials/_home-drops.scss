@@ -1,0 +1,30 @@
+.home-drops{
+  margin-top: 50px;
+  &-container{
+    &-intro{
+      display: flex;
+      justify-content: space-between;
+      padding-inline: 10%;
+      margin-bottom: 89px;
+      @media(max-width: 991px){
+        padding-inline: 5%;
+      }
+    }
+    &-list{
+      padding-inline: 12%;
+      display: flex;
+      gap: 48px;
+      justify-content: center;
+      flex-wrap: wrap;
+      @media (max-width: 991px){
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: visible;
+        justify-content: flex-start;
+        gap: 5% !important;
+        padding-inline: 5%;
+        padding-bottom: 40px;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+$sizes: ("20" : 20, "14" : 14, "13" : 13, "32": 32, "11" :11);
+$colors: ("primary" : $primary, "brown" : $brown, "white" : $white, "black": $black);
+$fonts: ("montserrat-bold" : "Montserrat-Bold", "montserrat-semibold" : "Montserrat-SemiBold","montserrat-extrabold" : "Montserrat-ExtraBold","montserrat-medium" : "Montserrat-Medium");
+
+
+
+@each $name, $color in $colors {
+  .color-#{$name}{
+    color: $color;
+  }
+}
+
+
+@each $name, $size in $sizes {
+  .text-#{$name}{
+    font-size: #{$size}px;
+    @media (max-width: 600px){
+      font-size: calc(#{$size}px - 2px);
+    }
+  }
+}
+
+@each $name, $font in $fonts {
+  .font-#{$name}{
+    font-family: $font;
+  }
+}
+
+

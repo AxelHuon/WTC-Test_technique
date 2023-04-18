@@ -1,0 +1,459 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Axis-Extrabold";
+  src: url("./fonts/Axis-Extrabold.otf") format("opentype");
+}
+@font-face {
+  font-family: "MonumentExtended-Regular";
+  src: url("./fonts/MonumentExtended-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Montserrat-ExtraBold";
+  src: url("./fonts/Montserrat-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("./fonts/Montserrat-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url("./fonts/Montserrat-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("./fonts/Montserrat-Medium.ttf") format("truetype");
+}
+.color-primary {
+  color: #00FFB0;
+}
+
+.color-brown {
+  color: #303030;
+}
+
+.color-white {
+  color: #FFF;
+}
+
+.color-black {
+  color: #000000;
+}
+
+.text-20 {
+  font-size: 20px;
+}
+@media (max-width: 600px) {
+  .text-20 {
+    font-size: calc(20px - 2px);
+  }
+}
+
+.text-14 {
+  font-size: 14px;
+}
+@media (max-width: 600px) {
+  .text-14 {
+    font-size: calc(14px - 2px);
+  }
+}
+
+.text-13 {
+  font-size: 13px;
+}
+@media (max-width: 600px) {
+  .text-13 {
+    font-size: calc(13px - 2px);
+  }
+}
+
+.text-32 {
+  font-size: 32px;
+}
+@media (max-width: 600px) {
+  .text-32 {
+    font-size: calc(32px - 2px);
+  }
+}
+
+.text-11 {
+  font-size: 11px;
+}
+@media (max-width: 600px) {
+  .text-11 {
+    font-size: calc(11px - 2px);
+  }
+}
+
+.font-montserrat-bold {
+  font-family: "Montserrat-Bold";
+}
+
+.font-montserrat-semibold {
+  font-family: "Montserrat-SemiBold";
+}
+
+.font-montserrat-extrabold {
+  font-family: "Montserrat-ExtraBold";
+}
+
+.font-montserrat-medium {
+  font-family: "Montserrat-Medium";
+}
+
+.button-primary {
+  border: 1Px solid #00FFB0;
+  background: #00FFB0;
+  font-size: 14px;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-family: "MonumentExtended-Regular";
+  text-transform: uppercase;
+  color: #000000;
+}
+@media (max-width: 1130px) {
+  .button-primary {
+    font-size: 12Px;
+  }
+}
+.button-primary a {
+  color: #000000;
+}
+
+.button-brown {
+  border: 1Px solid #303030;
+  background: #303030;
+  font-size: 14px;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-family: "MonumentExtended-Regular";
+  text-transform: uppercase;
+  color: #000000;
+}
+@media (max-width: 1130px) {
+  .button-brown {
+    font-size: 12Px;
+  }
+}
+.button-brown a {
+  color: #000000;
+}
+
+.button-white {
+  border: 1Px solid #FFF;
+  background: #FFF;
+  font-size: 14px;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-family: "MonumentExtended-Regular";
+  text-transform: uppercase;
+  color: #000000;
+}
+@media (max-width: 1130px) {
+  .button-white {
+    font-size: 12Px;
+  }
+}
+.button-white a {
+  color: #000000;
+}
+
+.button-black {
+  border: 1Px solid #000000;
+  background: #000000;
+  font-size: 14px;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-family: "MonumentExtended-Regular";
+  text-transform: uppercase;
+  color: #FFF;
+}
+@media (max-width: 1130px) {
+  .button-black {
+    font-size: 12Px;
+  }
+}
+.button-black a {
+  color: white;
+}
+
+.sneakers-card {
+  display: flex;
+  flex-direction: column;
+  height: 260px;
+  justify-content: flex-end;
+  width: 21%;
+  align-items: center;
+}
+@media (max-width: 1200px) {
+  .sneakers-card {
+    min-width: 223px;
+    width: 223px;
+  }
+}
+@media (max-width: 600px) {
+  .sneakers-card {
+    min-width: 210px;
+    width: 210px;
+  }
+}
+.sneakers-card-container {
+  width: 229px;
+  padding-top: 70px;
+  padding-inline: 12px;
+  box-sizing: border-box;
+  background: linear-gradient(319.36deg, rgba(255, 255, 255, 0.5) 21.89%, rgba(248, 248, 248, 0.5) 100%);
+  box-shadow: 0px 0px 49.7826px rgba(10, 21, 59, 0.06);
+  backdrop-filter: blur(0.82971px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 13.2754px;
+  padding-bottom: 24px;
+  position: relative;
+}
+@media (max-width: 600px) {
+  .sneakers-card-container {
+    width: 201px;
+  }
+}
+.sneakers-card-container-image {
+  position: absolute;
+  left: 50%;
+  top: -10%;
+  transform: translate(-50%, -50%);
+  height: 126px;
+  display: flex;
+  align-items: flex-end;
+}
+.sneakers-card-container-image img {
+  width: 200px;
+  height: auto;
+}
+@media (max-width: 600px) {
+  .sneakers-card-container-image img {
+    width: 150px;
+  }
+}
+.sneakers-card-container-infos-model-name {
+  margin-bottom: 5px;
+}
+.sneakers-card-container-infos-brand-name {
+  margin-bottom: 24px;
+}
+.sneakers-card-container-infos-brand-name h4 {
+  text-transform: capitalize;
+}
+.sneakers-card-container-infos-resell {
+  padding-left: 7px;
+  padding-right: 10px;
+  padding-block: 4.5px;
+  background: #F9F9F9;
+  display: inline-flex;
+  box-sizing: border-box;
+  border-radius: 165.942px;
+  gap: 6.5px;
+  align-items: center;
+}
+.sneakers-card-container-infos-resell h5 {
+  text-transform: uppercase;
+}
+.sneakers-card-container-infos-resell .dot-resell {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+}
+
+.select-custom {
+  padding: 15px 10px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  min-width: 154px;
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+  background: url("../assets/pictos/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: 90%;
+  text-transform: capitalize;
+}
+.select-custom:focus {
+  outline: none;
+}
+
+.header {
+  background: #000000;
+  width: 100%;
+}
+.header-container {
+  padding-inline: 5% 2%;
+  padding-block: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+@media (max-width: 991px) {
+  .header-container {
+    padding-inline: 5%;
+  }
+}
+.header-container-logo img {
+  width: 261px;
+}
+@media (max-width: 991px) {
+  .header-container-logo img {
+    width: 149px;
+  }
+}
+.header-container-menu {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  .header-container-menu {
+    display: none;
+  }
+}
+.header-container-menu li {
+  position: relative;
+}
+.header-container-menu li.active::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 100%;
+  background: rgb(0, 255, 176);
+  left: -10px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.header-container-menu li.link a {
+  font-family: "Axis-Extrabold";
+  font-size: 14px;
+  color: #FFF;
+}
+.header-container-button-mobile {
+  width: 25px;
+  height: 19px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  box-sizing: content-box;
+  padding: 0;
+  background: transparent;
+  border: none;
+}
+.header-container-button-mobile div {
+  background: #00FFB0;
+  border-radius: 30px;
+  height: 3px;
+}
+.header-container-button-mobile div:nth-child(1) {
+  width: 25px;
+}
+.header-container-button-mobile div:nth-child(2) {
+  width: 13px;
+}
+.header-container-button-mobile div:nth-child(3) {
+  width: 20px;
+}
+@media (min-width: 991px) {
+  .header-container-button-mobile {
+    display: none;
+  }
+}
+
+.home-drops {
+  margin-top: 50px;
+}
+.home-drops-container-intro {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 10%;
+  margin-bottom: 89px;
+}
+@media (max-width: 991px) {
+  .home-drops-container-intro {
+    padding-inline: 5%;
+  }
+}
+.home-drops-container-list {
+  padding-inline: 12%;
+  display: flex;
+  gap: 48px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 991px) {
+  .home-drops-container-list {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: visible;
+    justify-content: flex-start;
+    gap: 5% !important;
+    padding-inline: 5%;
+    padding-bottom: 40px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

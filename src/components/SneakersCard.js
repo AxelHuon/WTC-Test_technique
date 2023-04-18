@@ -31,7 +31,7 @@ const SneakersCard = ({sneakers ,index}) => {
 					</div>
 					<div className={"sneakers-card-container-infos-resell"}>
 						<div style={{backgroundColor:colorResell(sneakers.resellIndex)}} className={"dot-resell"}></div>
-						<h5 className={"text-13 color-black font-montserrat-bold"}>{sneakers.resellIndex}</h5>
+						<h5 className={"text-13 color-black font-montserrat-bold"}>{sneakers.resellIndex} resell</h5>
 					</div>
 				</div>
 			</div>

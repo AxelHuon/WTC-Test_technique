@@ -2,22 +2,27 @@ import React, {useEffect, useState} from 'react';
 import {drops_data} from "../../data/data";
 import SneakersCard from "../../components/SneakersCard";
 
-const Home = () => {
+const HomeV2 = () => {
 	
 	const [sneakers, setSneakers] = useState([]);
 	
 	const [filterSelected, setFilterSelected] = useState("Tous les resell");
 	
 	useEffect(() => {
-		setSneakers(drops_data)
-	}, []);
+		if (filterSelected === "Tous les resell"){
+			setSneakers(drops_data)
+		}else{
+			let dataFiltred = drops_data.filter((element)=>element.resellIndex === filterSelected)
+			setSneakers(dataFiltred)
+		}
+	}, [filterSelected]);
+	
 	
 	const dataFilter = ["Tous les resell", "excellent","bon", "moyen","mauvais"]
 	
 	const handleChangeFilter = (value) =>{
 		setFilterSelected(value)
 	}
-	
 	
 	return (
 		<main className={"home"}>
@@ -34,9 +39,7 @@ const Home = () => {
 						</select>
 					</div>
 					<ul className={"home-drops-container-list"}>
-						{sneakers.filter((itemSneakers) => filterSelected === "Tous les resell" || itemSneakers.resellIndex === filterSelected)
-							.map((itemSneakers) => <SneakersCard key={itemSneakers.id} sneakers={itemSneakers} />)
-						}
+						{sneakers.map((itemSneakers) => <SneakersCard key={itemSneakers.id} sneakers={itemSneakers} />)}
 					</ul>
 				</aside>
 			</section>
@@ -44,4 +47,4 @@ const Home = () => {
 	);
 };
 
-export default Home;
+export default HomeV2;

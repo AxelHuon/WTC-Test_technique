@@ -323,8 +323,10 @@ a {
   border: 1px solid #000000;
   border-radius: 5px;
   min-width: 154px;
-  -moz-appearance: none; /* Firefox */
-  -webkit-appearance: none; /* Safari and Chrome */
+  -moz-appearance: none;
+  /* Firefox */
+  -webkit-appearance: none;
+  /* Safari and Chrome */
   appearance: none;
   background: url("../assets/pictos/arrow-down.svg");
   background-repeat: no-repeat;

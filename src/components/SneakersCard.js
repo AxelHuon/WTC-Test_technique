@@ -16,12 +16,11 @@ const SneakersCard = ({sneakers ,index}) => {
 		}
 	}
 	
-	
 	return (
 		<li key={index} className={"sneakers-card"}>
 			<div className={"sneakers-card-container"}>
 				<div className={"sneakers-card-container-image"}>
-					<img src={`${sneakers.imagePath}`}/>
+					<img src={`${sneakers.imagePath}`} alt={sneakers.modelName}/>
 				</div>
 				<div className={"sneakers-card-container-infos"}>
 					<div className={"sneakers-card-container-infos-model-name"}>

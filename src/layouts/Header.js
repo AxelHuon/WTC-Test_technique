@@ -7,11 +7,11 @@ const Header = () => {
 					<img src={"images/logo-wtc.png"} alt={"Logo WhenToCop?"}/>
 				</div>
 				<ul className={"header-container-menu"}>
-					<li className={"link"}><a href={"#"}>Accueil</a></li>
-					<li className={"link active"}><a href={"#"}>Drops</a></li>
-					<li className={"link"}><a href={"#"}>Comparateur</a></li>
-					<li className={"link"}><a href={"#"}>News</a></li>
-					<li className={"button-primary"}><a href={"#"}>Télécharge l'application</a></li>
+					<li className={"link"}><a href={"https://www.whentocop.fr/"}>Accueil</a></li>
+					<li className={"link active"}><a href={"https://www.whentocop.fr/drops"}>Drops</a></li>
+					<li className={"link"}><a href={"https://www.whentocop.fr/comparator"}>Comparateur</a></li>
+					<li className={"link"}><a href={"https://www.whentocop.fr/blog"}>News</a></li>
+					<li className={"button-primary"}><a href={"https://www.whentocop.fr/download-app"}>Télécharge l'application</a></li>
 				</ul>
 				<button className={"header-container-button-mobile"}>
 					<div></div>
